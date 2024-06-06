@@ -3,10 +3,6 @@ import pandas as pd
 import numpy as np
 import re
 
-# Config the page
-st.set_page_config(
-    page_title ='BukaOnline - Cluster and Recommendation System'
-)
 
 # Load data
 data = pd.read_csv('data.csv', encoding='ISO-8859-1')
@@ -108,12 +104,13 @@ def run():
     with st.form(key='Tweets Prediction'):
         st.write("## Description Text")
         # Text input
-        text = st.text_input("Enter the item Description:").upper()
+        text = st.text_input("Enter the item Description:",value= 'white hanging heart t-light holder').upper()
         submitted = st.form_submit_button('Predict')
         
-        recomend = recsys(text,3)
+        
 
         if submitted:
+            recomend = recsys(text,3)
             st.write(recomend)
             st.balloons()
             

@@ -1,23 +1,15 @@
+import home, PROJECT_SEGMIFY_DEPLOY_PRED_REC, PROJECT_SIGMIFY_RECSYS
 import streamlit as st
 
-import FINAL_PROJECT_SEGMIFY_DEPLOY_PRED_CLUSTER_REC
-import FINAL_PROJECT_SEGMIFY_RECSYS 
 
-navigation = st.sidebar.selectbox("Select Page", 
-                                  options=['Cluster Prediction', 'Recommended System'])
-st.sidebar.write('# About')
-st.sidebar.write('''
-Segmify is an application that segments purchases using the RFM method to facilitate segment classification. 
-It simplifies the process of classifying segments and periodically recommends the top 3 best products based on member level.
+navigation = st.sidebar.selectbox('Navigation',['Home Page','Clustering customer and Recommend category','Recommendation System Item'])
 
+st.sidebar.markdown('# About Aplication')
+st.sidebar.write("Segmify is an application that groups customers based on their shopping behavior, including purchase frequency, spending amount, and recency of purchases. It uses the RFM method to facilitate segment classification, making it easier to classify segments and periodically recommend the top 3 best products based on member level.")
 
-Halaman tersebut dibagi menjadi dua yaitu : 
-- Cluster Prediction
-- Recommended System
-                 ''')
-
-
-if navigation == 'Prediction Cluster':
-    FINAL_PROJECT_SEGMIFY_DEPLOY_PRED_CLUSTER_REC.run()
+if navigation == 'Clustering customer and Recommend category':
+    PROJECT_SEGMIFY_DEPLOY_PRED_REC.run()
+elif navigation == 'Recommendation System Item':
+    PROJECT_SIGMIFY_RECSYS.run()
 else:
-    FINAL_PROJECT_SEGMIFY_RECSYS.run()
+    home.run()
