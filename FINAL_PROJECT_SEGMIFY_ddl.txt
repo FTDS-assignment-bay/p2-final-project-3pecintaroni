@@ -1,0 +1,38 @@
+=======================================================
+
+BSD 005 
+
+Adhy Arya Hendrata
+Daffa Darwin
+Vicky Eldora Wuisan
+
+========================================================
+
+
+
+
+
+-- Pembuatan table dengan nama table_m3
+CREATE TABLE table_m3 (
+    id SERIAL PRIMARY KEY,
+    "InvoiceNo" VARCHAR,
+    "StockCode" VARCHAR,
+    "Description" VARCHAR,
+    "Quantity" INT,
+    "InvoiceDate" DATE,
+    "UniteProce" FLOAT,
+    "CustomerID" INT,
+    "Country" VARCHAR
+);
+
+-- Melihat tabel yang sudah dibuat
+SELECT * FROM table_m3
+
+-- Pengisian value table_m3
+COPY table_m3
+FROM 'C:\Program Files\PostgreSQL\16\PROJECT_SIGMIFY_data_raw.csv'
+DELIMITER ','
+CSV HEADER;
+
+-- Melihat isi tabel
+SELECT * FROM table_m3
