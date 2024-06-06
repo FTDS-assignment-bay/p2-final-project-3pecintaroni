@@ -1,0 +1,8 @@
+dataset
+https://www.kaggle.com/datasets/carrie1/ecommerce-data
+
+huggingface
+https://huggingface.co/spaces/vickyeldora/SEGMIFY
+
+Tableu
+https://public.tableau.com/app/profile/daffa.darwin/viz/preliminaryfinalprojectvisualisation/QuantityDistributionoverCountry?publish=yes
