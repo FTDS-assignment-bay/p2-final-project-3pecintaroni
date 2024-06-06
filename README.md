@@ -28,7 +28,6 @@ From the above background we have a plan to do:
 - Using Kmeans Clustering calculation    
 - Using Recommendation System 
 
-Application publisher BSD 005 
 
 **Group Name** : `3Pecintaroni`   
 
@@ -39,8 +38,9 @@ Application publisher BSD 005
 
 ## **Deployment README**
 
+Application publisher BSD 005 
 https://huggingface.co/spaces/vickyeldora/SEGMIFY   
-Application publisher BSD 005    
+
 
 Group Name 
 - Adhy Arya Hendrata
